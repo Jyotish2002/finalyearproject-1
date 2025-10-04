@@ -5,57 +5,139 @@
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-  background-color: #f8f9fa;
-  color: #202124;
-  line-height: 1.6;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+  background-color: #f5f6f7;
+  color: #333;
+  line-height: 1.5;
+  font-size: 14px;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .ground-news-app {
   min-height: 100vh;
 }
 
-/* Promo Banner */
+/* Ground News Color Palette - Light Theme (Default) */
+:root {
+  --ground-primary: #1a365d;
+  --ground-secondary: #2d4a69;
+  --ground-accent: #0066cc;
+  --ground-bg: #f5f6f7;
+  --ground-card-bg: #ffffff;
+  --ground-text: #333333;
+  --ground-text-light: #666666;
+  --ground-border: #e2e8f0;
+  --ground-left: #0073e6;
+  --ground-center: #808080;
+  --ground-right: #dc143c;
+  --ground-gradient: linear-gradient(135deg, #1a365d 0%, #2d4a69 100%);
+  --ground-shadow: rgba(0,0,0,0.08);
+  --ground-shadow-hover: rgba(0,0,0,0.15);
+}
+
+/* Dark Theme */
+[data-theme="dark"] {
+  --ground-primary: #2d5a8f;
+  --ground-secondary: #3d6b99;
+  --ground-accent: #4da3ff;
+  --ground-bg: #121212;
+  --ground-card-bg: #1e1e1e;
+  --ground-text: #e0e0e0;
+  --ground-text-light: #a0a0a0;
+  --ground-border: #333333;
+  --ground-left: #4da3ff;
+  --ground-center: #999999;
+  --ground-right: #ff6b6b;
+  --ground-gradient: linear-gradient(135deg, #2d5a8f 0%, #3d6b99 100%);
+  --ground-shadow: rgba(0,0,0,0.3);
+  --ground-shadow-hover: rgba(0,0,0,0.5);
+}
+
+[data-theme="dark"] body {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+[data-theme="dark"] .ground-news-app {
+  background-color: #121212;
+}
+
+/* Promo Banner - Ground News Style */
 .promo-banner {
-  background: linear-gradient(135deg, #d4af37, #ffd700);
-  color: #000;
-  padding: 12px 0;
+  background: var(--ground-gradient);
+  color: #ffffff;
+  padding: 10px 0;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 24px;
   font-weight: 500;
-  font-size: 0.95rem;
+  font-size: 14px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .get-started-btn {
-  background: #000;
-  color: #fff;
+  background: #ffffff;
+  color: var(--ground-primary);
   border: none;
   padding: 8px 20px;
-  border-radius: 4px;
+  border-radius: 6px;
   font-weight: 600;
   cursor: pointer;
-  font-size: 0.9rem;
-  transition: background 0.2s;
+  font-size: 13px;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .get-started-btn:hover {
-  background: #333;
+  background: #f0f0f0;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
 }
 
-/* Main Layout */
+/* Main Layout - Ground News Style */
 .main-layout {
   max-width: 1400px;
   margin: 0 auto;
-  padding: 24px 20px;
+  padding: 20px 16px;
+  background: var(--ground-bg);
 }
 
 .content-wrapper {
   display: grid;
-  grid-template-columns: 1fr 340px;
-  gap: 40px;
+  grid-template-columns: 1fr 320px;
+  gap: 32px;
+}
+
+/* Typography improvements */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--ground-text);
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+a {
+  color: var(--ground-accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Card styling */
+.card {
+  background: var(--ground-card-bg);
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  padding: 20px;
+  margin-bottom: 16px;
+  border: 1px solid var(--ground-border);
+}
+
+.card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
 }
 
 /* Global Responsive */
@@ -68,5 +150,9 @@ body {
 @media (max-width: 768px) {
   .main-layout {
     padding: 16px 12px;
+  }
+  
+  .card {
+    padding: 16px;
   }
 }

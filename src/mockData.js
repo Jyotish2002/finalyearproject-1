@@ -39,7 +39,9 @@ export const topNewsStories = [
     centerCoverage: 52,
     rightCoverage: 0,
     sources: 52,
-    category: "Health"
+    category: "Health",
+    image: "/api/placeholder/800/500",
+    description: "The Department of Health and Human Services is examining potential links between acetaminophen use during pregnancy and autism spectrum disorders."
   },
   {
     id: 2,
@@ -48,7 +50,9 @@ export const topNewsStories = [
     centerCoverage: 29,
     rightCoverage: 23,
     sources: 29,
-    category: "Business"
+    category: "Business",
+    image: "/api/placeholder/800/500",
+    description: "Tesla's board of directors has proposed a historic compensation package for CEO Elon Musk, contingent on meeting unprecedented company growth milestones."
   },
   {
     id: 3,
@@ -57,7 +61,9 @@ export const topNewsStories = [
     centerCoverage: 33,
     rightCoverage: 31,
     sources: 33,
-    category: "World"
+    category: "World",
+    image: "/api/placeholder/800/500",
+    description: "Thailand's parliament has elected Anutin Charnvirakul as the country's new prime minister, marking a significant political shift."
   },
   {
     id: 4,
@@ -66,7 +72,9 @@ export const topNewsStories = [
     centerCoverage: 79,
     rightCoverage: 15,
     sources: 79,
-    category: "Celebrity"
+    category: "Celebrity",
+    image: "/api/placeholder/800/500",
+    description: "The fashion world mourns the loss of legendary designer Giorgio Armani, whose influence shaped modern luxury fashion."
   }
 ];
 
@@ -79,7 +87,9 @@ export const worldNewsStories = [
     rightCoverage: 2,
     sources: 11,
     category: "Japan Politics",
-    location: "Japan"
+    location: "Japan",
+    image: "/api/placeholder/600/400",
+    description: "Japanese officials emphasize that trade negotiations with the United States remain ongoing, particularly regarding pharmaceutical and semiconductor orders."
   },
   {
     id: 2,
@@ -89,7 +99,9 @@ export const worldNewsStories = [
     rightCoverage: 41,
     sources: 13,
     category: "Asian Politics",
-    location: "China"
+    location: "China",
+    image: "/api/placeholder/600/400",
+    description: "Naval vessels from Canada and Australia conducted a joint transit through the Taiwan Strait, drawing attention from Chinese state media."
   },
   {
     id: 3,
@@ -99,7 +111,9 @@ export const worldNewsStories = [
     rightCoverage: 13,
     sources: 4,
     category: "Tokyo, Japan",
-    location: "Tokyo"
+    location: "Tokyo",
+    image: "/api/placeholder/600/400",
+    description: "Japan's imperial family faces questions about succession as a young prince reaches adulthood amid ongoing constitutional debates."
   },
   {
     id: 4,
@@ -109,7 +123,9 @@ export const worldNewsStories = [
     rightCoverage: 22,
     sources: 64,
     category: "Israel-Gaza",
-    location: "Gaza"
+    location: "Gaza",
+    image: "/api/placeholder/600/400",
+    description: "Israeli military issues evacuation orders for Gaza City residents, directing them to designated humanitarian zones in the southern region."
   },
   {
     id: 5,
@@ -119,7 +135,9 @@ export const worldNewsStories = [
     rightCoverage: 30,
     sources: 3,
     category: "Nicolás Maduro",
-    location: "Venezuela"
+    location: "Venezuela",
+    image: "/api/placeholder/600/400",
+    description: "Venezuelan President Nicolás Maduro calls for diplomatic engagement following escalating rhetoric from former US President Trump."
   },
   {
     id: 6,
@@ -129,7 +147,9 @@ export const worldNewsStories = [
     rightCoverage: 35,
     sources: 9,
     category: "US Foreign Policy",
-    location: "Alaska"
+    location: "Alaska",
+    image: "/api/placeholder/600/400",
+    description: "High-level defense discussions between US and Taiwanese officials took place in Alaska, signaling continued security cooperation."
   },
   {
     id: 7,
@@ -139,7 +159,9 @@ export const worldNewsStories = [
     rightCoverage: 54,
     sources: 8,
     category: "Tariffs",
-    location: "United States"
+    location: "United States",
+    image: "/api/placeholder/600/400",
+    description: "US Commerce Secretary Howard Lutnick predicts a swift resolution to ongoing trade tensions with India."
   },
   {
     id: 8,
@@ -149,7 +171,9 @@ export const worldNewsStories = [
     rightCoverage: 25,
     sources: 28,
     category: "US Foreign Policy",
-    location: "United States"
+    location: "United States",
+    image: "/api/placeholder/600/400",
+    description: "Former President Trump reportedly considers military options to combat drug cartel operations within Venezuelan territory."
   },
   {
     id: 9,
@@ -159,7 +183,9 @@ export const worldNewsStories = [
     rightCoverage: 29,
     sources: 8,
     category: "Natural Disasters",
-    location: "Pakistan"
+    location: "Pakistan",
+    image: "/api/placeholder/600/400",
+    description: "Massive evacuation efforts underway in Pakistan's Sindh province as authorities respond to severe flooding risks."
   }
 ];
 

@@ -9,7 +9,11 @@ const NewsCard = ({ story, showImage = false, isMainStory = false }) => (
     )}
     <div className="news-content">
       {story.category && (
-        <div className="news-category">{story.category} • {story.location || 'Global'}</div>
+        <div className="news-meta">
+          <span className="news-category">{story.category}</span>
+          {story.location && <span className="news-location">• {story.location}</span>}
+          {story.timeAgo && <span className="news-time">• {story.timeAgo}</span>}
+        </div>
       )}
       <h3 className="news-title">{story.title}</h3>
       {story.description && (
@@ -33,9 +37,20 @@ const NewsCard = ({ story, showImage = false, isMainStory = false }) => (
             ></div>
           </div>
           <div className="coverage-stats">
-            <span className="left-stat">{story.leftCoverage}% Left coverage: {story.sources} sources</span>
+            <span className="sources-count">{story.sources || story.centerCoverage} sources</span>
+            <div className="bias-breakdown">
+              <span className="left-stat">{story.leftCoverage}% Left</span>
+              <span className="center-stat">{story.centerCoverage}% Center</span>
+              <span className="right-stat">{story.rightCoverage}% Right</span>
+            </div>
           </div>
         </>
+      )}
+      
+      {story.coverageType && (
+        <div className="coverage-indicator">
+          <span className="coverage-type">{story.coverageType}</span>
+        </div>
       )}
     </div>
   </div>
